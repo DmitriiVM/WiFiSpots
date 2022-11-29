@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wi-Fi Spots</string>
+    <string name="title_activity_maps">Wi-Fi spots</string>
+    <string name="info_text">Please zoom in to see the Wi-Fi spots</string>
+</resources>
