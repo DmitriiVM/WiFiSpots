@@ -3,6 +3,7 @@ package com.dvm.wifispots.presentation.util.android
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.graphics.drawable.Drawable
 import android.util.Log
 import androidx.annotation.ColorInt
 import androidx.annotation.DrawableRes
@@ -23,6 +24,13 @@ object BitmapHelper {
             Log.e("BitmapHelper", "Resource not found")
             return BitmapDescriptorFactory.defaultMarker()
         }
+        return drawableToBitmap(drawable, color)
+    }
+
+    fun drawableToBitmap(
+        drawable: Drawable,
+        @ColorInt color: Int
+    ): BitmapDescriptor {
         val bitmap = Bitmap.createBitmap(
             drawable.intrinsicWidth,
             drawable.intrinsicHeight,
